@@ -1,0 +1,17 @@
+/*  tsconfig.json */
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "./lib",
+    "sourceMap": true,
+    "declaration": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+
+    /* 强类型检查配置 */
+    "strict": true,
+    "noImplicitAny": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
