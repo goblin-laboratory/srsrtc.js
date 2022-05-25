@@ -1,5 +1,5 @@
 declare class SRSRTC {
-    protected static get VERSION(): string;
+    protected version: string;
     protected static isSupported(): boolean;
 }
 export default SRSRTC;

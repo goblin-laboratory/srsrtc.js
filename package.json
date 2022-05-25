@@ -1,12 +1,18 @@
 {
   "name": "srsrtc.js",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "module": "dist/srsrtc.js",
+  "types": "dist/srsrtc.d.ts",
   "scripts": {
-    "build": "tsc"
+    "start": "rimraf dist && rollup -c ./scripts/rollup.config.dev.js -w",
+    "build": "rimraf dist && rollup -c ./scripts/rollup.config.prod.js"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
     "jest": "^28.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.74.1",
+    "rollup-plugin-filesize": "^9.1.2",
+    "tslib": "^2.4.0",
     "typescript": "^4.6.4"
   }
 }

@@ -1,10 +1,11 @@
 /*  tsconfig.json */
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "outDir": "./lib",
-    "sourceMap": true,
+    // "target": "ESNext",
+    // "outDir": "./lib",
+    // "sourceMap": true,
     "declaration": true,
+    "declarationDir": ".",
     "removeComments": true,
     "moduleResolution": "node",
 
